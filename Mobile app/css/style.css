@@ -1,0 +1,878 @@
+/*************** THEME STYLES ***************/
+
+*{margin:0;padding:0;}
+html {
+    position: relative;
+    /*height: 100%;*/
+    width: 100%;
+    /*overflow-x: hidden;*/
+}
+#mobile-wrap{
+	background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/**************** FONTS ******************/
+
+@font-face{
+	font-family:header-font;
+	src:url(../fonts/BebasNeueBook.ttf);
+}
+@font-face{
+	font-family:content-font;
+	src:url(../fonts/Oswald/Oswald-Light.ttf);
+}
+.wrapper{
+	padding:0;
+}
+
+.header{
+	margin-top:50px;
+}
+.header p{
+	margin:0;
+	border-style:double;
+	padding:20px;
+	margin-bottom:20px;
+	color:white;
+}
+span.logo{
+	text-align:center;
+	font-size:20px;
+	text-transform:uppercase;
+	font-family: header-font;
+	letter-spacing: 5px;
+	font-weight: bold;
+}
+.description-text{
+	font-size:13px;
+	text-align:justify;
+	color:white;
+	font-family: content-font;
+	font-weight: normal;
+	letter-spacing: 2px;
+}
+.login{
+	margin-top:50px;
+}
+.login p{
+	margin:0;
+	margin: 0px;
+	border-bottom: 3px double;
+	padding: 15px;
+	color:white;
+	font-family:header-font;
+	letter-spacing:2px;
+}
+.login a{
+	color:white;
+}
+.login a:hover{
+	text-decoration:none;
+}
+span.login-title{
+	text-align:center;
+	font-size:20px;
+	text-transform:uppercase;
+}
+span.register-icon{
+	text-align:center;
+	padding: 30px 0px;
+}
+
+/*************************** LOGIN PAGE STYLES ********************/
+.bar{
+	background: rgba(0, 0, 0, 0.39) none repeat scroll 0% 0%;
+	padding: 8px;
+}
+.bar a:hover{
+	text-decoration:none;
+}
+.bar .fa{
+	float:left;
+	margin-right:10px;
+	color:white;
+}
+.bar p{
+	color: white;
+	text-transform: uppercase;
+	font-family: header-font;
+	letter-spacing: 2px;
+	font-size: 20px;
+	padding: 0px;
+	margin: 0px;
+	line-height:31px;
+}
+.login-header{
+	text-align: center;
+	color: white;
+	font-family: header-font;
+	font-weight:bold;
+	letter-spacing: 3px;
+	font-size: 25px;
+	border-bottom: 3px double;
+	margin-top: 50px;
+}
+span.username{
+	margin-top:50px;
+	margin-bottom:20px;
+}
+span.password{
+	margin-bottom:20px;
+}
+
+span.username i{
+	width:20%;
+	color: white;
+	float: left;
+}
+span.username input{
+	width:80%;
+	height: 42px;
+	border: 1px solid white;
+	border-radius: 5px;
+	float: left;
+	padding: 10px;
+	background: rgba(0, 0, 0, 0.17) none repeat scroll 0% 0%;
+	color: white;
+	font-size: 16px;
+	font-family: content-font;
+	letter-spacing: 3px;
+	text-align:center;
+}
+
+span.password i{
+	width:20%;
+	color: white;
+	float: left;
+}
+span.password input{
+	height: 40px;
+	width:80%;
+	border: 1px solid white;
+	border-radius: 5px;
+	float: left;
+	padding: 10px;
+	background: rgba(0, 0, 0, 0.17) none repeat scroll 0% 0%;
+	color: white;
+	font-size: 16px;
+	font-family: content-font;
+	letter-spacing: 3px;
+	text-align:center;
+}
+span.submit i{
+	width:20%;
+	color: white;
+	float: left;
+}
+span.submit input{
+	width: 80%;
+	height: 45px;
+	background: rgba(42, 141, 138, 0.36);
+	border: 3px double white;
+	border-radius: 5px;
+	color: white;
+	font-size: 16px;
+	font-family: content-font;
+	letter-spacing: 3px;
+}
+span.register-account{
+	margin-top: 25px;
+	color: white;
+	font-family: content-font;
+	letter-spacing:2px;
+	font-size: 13px;
+}
+
+/********************** CANDIDATE REGISTRATION PAGE *********************/
+
+.candid-register{
+	margin-top:120px;
+}
+.candid-register input[type="text"], input[type="email"], input[type="password"], select{
+	height: 40px;
+	border-radius: 5px;
+	border: 1px solid white;
+	background: none;
+	color: white;
+	margin-bottom: 10px;
+	font-family: content-font;
+	letter-spacing: 2px;
+	font-size: 17px;
+}
+.candid-register input[type="file"]{
+	padding:0;
+	height: 40px;
+	border-radius: 5px;
+	border: 1px solid white;
+	background: none;
+	color: rgb(176, 176, 176);
+	margin-bottom: 10px;
+	font-family: content-font;
+	letter-spacing: 2px;
+	font-size: 17px;
+}
+.candid-register input[type="submit"]{
+	height: 45px;
+	background: rgba(42, 141, 138, 0.36);
+	border: 3px double white;
+	border-radius: 5px;
+	color: white;
+	font-size: 16px;
+	font-family: content-font;
+	letter-spacing: 3px;
+	margin-bottom:50px;
+}
+.candid-register select{color: rgb(176, 176, 176);}
+.candid-register select option{
+	background:black;
+}
+.candid-register p{
+	font-size: 20px;
+    font-family: content-font;
+    letter-spacing: 2px;
+    color: white;
+    padding: 5px 5px;
+}
+
+/********************* FREELANCERS REGISTRATION PAGE *******************/
+
+.freelance-register{
+	margin-top:120px;
+}
+.freelance-register input[type="text"], input[type="password"], input[type="date"], select{
+	height: 40px;
+	border-radius: 5px;
+	border: 1px solid white;
+	background: none;
+	color: white;
+	margin-bottom: 10px;
+	font-family: content-font;
+	letter-spacing: 2px;
+	font-size: 17px;
+}
+.freelance-register input[type="file"]{
+	padding:0;
+	height: 40px;
+	border-radius: 5px;
+	border: 1px solid white;
+	background: none;
+	color: rgb(176, 176, 176);
+	margin-bottom: 10px;
+	font-family: content-font;
+	letter-spacing: 2px;
+	font-size: 17px;
+}
+.freelance-register select option{
+	background:black;
+}
+.freelance-register input[type="submit"]{
+	height: 45px;
+	background: rgba(42, 141, 138, 0.36);
+	border: 3px double white;
+	border-radius: 5px;
+	color: white;
+	font-size: 16px;
+	font-family: content-font;
+	letter-spacing: 3px;
+	margin-bottom:50px;
+}
+.freelance-register p{
+	font-size: 20px;
+    font-family: content-font;
+    letter-spacing: 2px;
+    color: white;
+    padding: 5px 5px;
+}
+.freelance-register select{color: rgb(176, 176, 176);}
+
+/****************** COMPANY REGISTER PAGE *********************/
+
+.campany-register{
+	margin-top:120px;
+}
+.campany-register input[type="text"], input[type="password"], input[type="date"], select{
+	height: 40px;
+	border-radius: 5px;
+	border: 1px solid white;
+	background: none;
+	color: white;
+	margin-bottom: 10px;
+	font-family: content-font;
+	letter-spacing: 2px;
+	font-size: 17px;
+}
+.campany-register input[type="file"]{
+	padding:0;
+	height: 40px;
+	border-radius: 5px;
+	border: 1px solid white;
+	background: none;
+	color: rgb(176, 176, 176);
+	margin-bottom: 10px;
+	font-family: content-font;
+	letter-spacing: 2px;
+	font-size: 17px;
+}
+.campany-register select option{
+	background:black;
+}
+.campany-register input[type="submit"]{
+	height: 45px;
+	background: rgba(42, 141, 138, 0.36);
+	border: 3px double white;
+	border-radius: 5px;
+	color: white;
+	font-size: 16px;
+	font-family: content-font;
+	letter-spacing: 3px;
+	margin-bottom:50px;
+}
+.campany-register p{
+	font-size: 20px;
+    font-family: content-font;
+    letter-spacing: 2px;
+    color: white;
+    padding: 5px 5px;
+}
+.campany-register select{color: rgb(176, 176, 176);}
+
+/************************ NAV BAR HOME STYLES *********************/
+
+	a.nav-expander {
+  background: none repeat scroll 0 0 #000000;
+  color: #FFFFFF;
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  height: 50px;
+  margin-right: 0;
+  padding: 1em 1.6em 2em;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 0;
+  transition: right 0.3s ease-in-out 0s;
+  z-index: 12;
+
+  transition: right 0.3s ease-in-out 0s;
+  -webkit-transition: right 0.3s ease-in-out 0s;
+  -moz-transition: right 0.3s ease-in-out 0s;
+  -o-transition: right 0.3s ease-in-out 0s;
+
+}
+
+a.nav-expander:hover {
+  cursor: pointer;
+}
+
+/*a.nav-expander.fixed {
+  position: fixed;
+}*/
+
+.nav-expanded a.nav-expander.fixed {
+    right: 20em;
+}
+nav {
+ background: transparent url("../img/trans_black.png") repeat scroll 0% 0%;
+  display: block;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  right: -20em;
+  font-size: 15px;
+  top: 0;
+  width: 20em;
+  z-index: 2000;
+
+  transition: right 0.3s ease-in-out 0s;
+  -webkit-transition: right 0.3s ease-in-out 0s;
+  -moz-transition: right 0.3s ease-in-out 0s;
+  -o-transition: right 0.3s ease-in-out 0s;
+
+}
+.nav-expanded nav {
+  right: 0;
+}
+
+body.nav-expanded {
+  margin-left: 0em;
+  transition: right 0.4s ease-in-out 0s;
+  -webkit-transition: right 0.4s ease-in-out 0s;
+  -moz-transition: right 0.4s ease-in-out 0s;
+  -o-transition: right 0.4s ease-in-out 0s;
+}
+
+#nav-close {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  padding-right: 10px;
+}
+.main-menu {
+  padding-top: 12px;
+}
+
+.main-menu li {
+  border-bottom: 1px solid #323949;
+  margin-left: 20px;
+  font-size: 18px;
+  padding: 12px;
+  text-align:center;
+}
+
+.main-menu li a {
+  color: #FFF;
+text-decoration: none;
+font-family: content-font;
+letter-spacing: 1px !important;
+}
+
+.main-menu li a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.main-menu li .sub-nav {
+  border-bottom: 0px;
+  padding: 4px;
+}
+
+.main-menu a .caret {
+	width: 0;
+	height: 0;
+	display: inline-block;
+	vertical-align: top;
+	border-top: 4px solid #4f5963;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	content: "";
+    margin-top: 8px;
+}
+
+.main-menu a:hover .caret {
+	border-top-color: #4f5963;
+}
+
+.main-menu li.open > a > .caret {
+	border-top: none;
+	border-bottom: 4px solid #4f5963;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+}
+
+.main-menu li.open > a:hover > .caret {
+	border-bottom-color: #4f5963;
+}
+
+.icon:before {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+  content: '\f105';
+}
+
+.main-menu li > a > span.icon {
+  float: right;
+  margin: 0.1em 1.7em -0.1em 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.main-menu li > a:hover > span.icon {
+  float: right;
+  margin: 0.1em 0.8em -0.1em 0;
+  opacity: 1;
+}
+
+.navbar-inverse .navbar-brand{
+	font-family:header-font;
+	letter-spacing:3px;
+	font-weight:bold;
+	color:#fff !important;
+}
+.main-menu li:nth-child(1){
+	border-bottom:none;
+}
+
+.home-icon{
+background:url(../img/icons/home.png);
+background-size: auto 50%;
+background-repeat: no-repeat;
+background-position: 10px 50%;
+}
+.job-icon{
+background:url(../img/icons/jobs.png);
+background-size: auto 50%;
+background-repeat: no-repeat;
+background-position: 10px 50%;
+}
+.resume-icon{
+background:url(../img/icons/resume.png);
+background-size: auto 50%;
+background-repeat: no-repeat;
+background-position: 10px 50%;
+}
+.freelance-icon{
+background:url(../img/icons/freelance.png);
+background-size: auto 50%;
+background-repeat: no-repeat;
+background-position: 10px 50%;
+}
+.company-icon{
+background:url(../img/icons/company.png);
+background-size: auto 40%;
+background-repeat: no-repeat;
+background-position: 10px 50%;
+}
+.demand-icon{
+background:url(../img/icons/demand.png);
+background-size: auto 50%;
+background-repeat: no-repeat;
+background-position: 10px 50%;
+}
+.contact-icon{
+background:url(../img/icons/contact.png);
+background-size: auto 40%;
+background-repeat: no-repeat;
+background-position: 10px 50%;
+}
+.logout-icon{
+background:url(../img/icons/logout.png);
+background-size: auto 40%;
+background-repeat: no-repeat;
+background-position: 10px 50%;
+}
+
+/******************* FOOTER STYLES ****************/
+.footer{
+	/*margin-top:100px;*/
+	border-top: 3px double white;
+	padding-top: 30px;
+}
+.footer-icon{
+	text-align:center;
+}
+.footer-icon img{
+	height:50px;
+}
+.footer-icon p{
+	color: white;
+	line-height: 3;
+	font-family: header-font;
+	letter-spacing: 2px;
+	font-size: 16px;
+}
+
+/*************** HOME SLIDER STYLES ***************/
+
+.swiper-container {
+        width: 90%;
+        height: 350px;
+        margin: 20px auto;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: rgba(18, 18, 18, 0.43);
+		color:white;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+    }
+	.slide h1{
+		font-size: 50px;
+		font-family: header-font;
+		letter-spacing: 2px;
+		font-weight: bold;
+		margin-top: 60px;
+		margin-bottom:50px;
+	}
+	.slide a{
+		font-size: 16px;
+		font-family: content-font;
+		letter-spacing: 2px;
+		word-spacing: 2px;
+		border: 3px double;
+		padding: 10px;
+		color:white;
+	}
+	.slide a:hover{
+		text-decoration:none;
+	}
+
+	
+	
+	
+/********************** JOB PAGE STYLES **********************/
+.page-content{
+	padding:20px;
+}
+.job-resume-company-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px !important;
+    font-family: content-font;
+    letter-spacing: 3px;
+    font-weight: bold;
+    border-bottom: 1px dotted;
+    padding-top: 15px;
+	color: #1683A7;
+	margin-bottom:15px;
+}
+.job-resume-company-title h3{
+	margin-top:15px;
+	margin-bottom:15px;
+}
+.jobs-resume-company{
+	list-style:none;
+}
+.jobs-resume-company>li{
+	width:100%;
+	border-bottom:1px solid gainsboro;
+	padding: 6px 0;
+	margin-bottom:20px;
+}
+.logo-img {
+	padding-left:0px;
+}
+.logo-img img{
+	width:100%;
+}
+.title-topbottom{
+	padding:0px;
+}
+.title-topbottom p{
+	margin:0;
+	padding:0;
+}
+.top-title p{
+	font-size: 16px;
+	font-family: content-font;
+	letter-spacing: 2px;
+	font-weight: normal;
+	margin-left: 0px;
+	padding: 0px;
+}
+.bottom-title p{
+	font-family: header-font;
+	letter-spacing: 2px;
+	font-size: 17px;
+	color: gray;
+}
+.icon-go i{
+	line-height:2;
+}
+.search-filters{
+	padding:0px 20px;
+	margin-bottom:20px;
+}
+.search-filters input{
+	border:1px solid gainsboro;
+	border-radius:3px;
+	padding:0 10px;
+	width:75%;
+	height:35px;
+	float:left;
+}
+.search-filters button{
+	background:none;
+	border:none;
+	text-align: right;
+	margin-left: 30px;
+	color: grey;
+}
+.search-filters i{
+	text-align: right;
+	clear:both;
+}
+
+.inner-filter{
+	padding: 10px 0px 0px 0px;
+	border-bottom: 1px solid gainsboro;
+}
+.inner-filter i{
+	float: left;
+font-size: 15px;
+margin-right: 5px;
+line-height: 20px;
+}
+
+.loadMore{
+	margin-bottom: 25px;
+	text-align: center;
+	margin-top: 20px;
+}
+.load-more a{
+	color:gray;
+	padding: 15px;
+	border: 1px solid #989494;
+	border-radius: 61px;
+	height: 73px;
+}
+.load-more a:hover{
+	text-decoration:none;
+}
+
+/************** JOB-RESUME-COMPANY-FREELANCERS DESCRIPTION STYLES ****************/
+.overview .title{
+	border-bottom:1px solid #c0bbbb;
+	margin-bottom: 10px;
+}
+.overview .title>h3{
+	font-family: content-font;
+	letter-spacing: 1px;
+	color: #4A7D9C;
+}
+.skills .title{
+	border-bottom:1px solid #c0bbbb;
+	margin-bottom: 10px;
+}
+.skills .title>h3{
+	font-family: content-font;
+	letter-spacing: 1px;
+	color: #4A7D9C;
+}
+.skills-content{
+	/*margin-top:25px;*/
+}
+.skills-content>span{
+padding: 7px;
+text-align: center;
+margin-right: 10px;
+border-radius: 4px;
+background: gray none repeat scroll 0% 0%;
+color: white;
+line-height: 3;
+}
+.language .title{
+	border-bottom:1px solid #c0bbbb;
+	margin-bottom: 10px;
+}
+.language .title>h3{
+	font-family: content-font;
+	letter-spacing: 1px;
+	color: #4A7D9C;
+}
+.language-content>span{
+padding: 7px;
+text-align: center;
+margin-right: 10px;
+border-radius: 4px;
+background: gray none repeat scroll 0% 0%;
+color: white;
+line-height: 3;
+}
+
+.company-details .title{
+	border-bottom:1px solid #c0bbbb;
+	margin-bottom: 10px;
+}
+.company-details .title>h3{
+	font-family: content-font;
+	letter-spacing: 1px;
+	color: #4A7D9C;
+}
+.apply{
+	text-align:center;
+	padding:20px 0px;
+}
+
+.about-resume .title{
+	border-bottom:1px solid #c0bbbb;
+	margin-bottom: 10px;
+}
+.about-resume .title>h3{
+	font-family: content-font;
+	letter-spacing: 1px;
+	color: #4A7D9C;
+}
+.avatar{
+margin-bottom:10px;
+padding-left:0px;
+}
+.avatar>img{
+	max-width:100%;
+	border-radius:1000px;
+	height:auto;
+}
+.hire{
+	padding: 15px 0px;
+line-height: 4;
+}
+.hire>button{
+border-radius: 0px;
+border: medium none;
+width: 100%;
+background: rgb(1, 113, 128);
+color: white;
+height: 40px;
+}
+.hire>button:hover{
+	color:white;
+}
+.resume-edu.title{
+	border-bottom:1px solid #c0bbbb;
+	margin-bottom: 10px;
+}
+.resume-edu .title>h3{
+	font-family: content-font;
+	letter-spacing: 1px;
+	color: #4A7D9C;
+}
+.resume-work-experience.title{
+	border-bottom:1px solid #c0bbbb;
+	margin-bottom: 10px;
+}
+.resume-work-experience .title>h3{
+	font-family: content-font;
+	letter-spacing: 1px;
+	color: #4A7D9C;
+}
+.job-offers .title{
+	border-bottom:1px solid #c0bbbb;
+	margin-bottom: 10px;
+}
+.job-offers .title>h3{
+	font-family: content-font;
+	letter-spacing: 1px;
+	color: #4A7D9C;
+}
+.company-clients .title{
+	border-bottom:1px solid #c0bbbb;
+	margin-bottom: 10px;
+}
+.company-clients .title>h3{
+	font-family: content-font;
+	letter-spacing: 1px;
+	color: #4A7D9C;
+}
+.company-contact .title{
+	border-bottom:1px solid #c0bbbb;
+	margin-bottom: 10px;
+}
+.company-contact .title>h3{
+	font-family: content-font;
+	letter-spacing: 1px;
+	color: #4A7D9C;
+}

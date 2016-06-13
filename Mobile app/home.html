@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<title>Home</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css" />
+	
+	<!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body id="mobile-wrap">
+	<nav>
+	  <ul class="list-unstyled main-menu">
+
+		<!--Include your navigation here-->
+			<li class="text-right"><a href="#" id="nav-close">X</a></li>
+			  <li class="home-icon"><a href="home.html">Home</a></li>
+			  <li class="job-icon"><a href="jobs.html">Jobs</a></li>
+			  <li class="resume-icon"><a href="resumes.html">Resumes</a></li>
+			  <li class="freelance-icon"><a href="#">Freelancers</a></li>
+			  <li class="company-icon"><a href="companies.html">Companies</a></li>
+			  <li class="demand-icon"><a href="#">Demand board</a></li>
+			  <li class="contact-icon"><a href="#">Contact</a></li>
+			  <li class="logout-icon"><a href="index.html">Log out</a></li>
+		  </ul>
+		</li>
+	  </ul>
+	</nav>
+
+	<div class="navbar navbar-inverse navbar-fixed-top">      
+
+		<!--Include your brand here-->
+		<a class="navbar-brand" href="home.html">Diamond connect</a>
+		<div class="navbar-header pull-right">
+		  <a id="nav-expander" class="nav-expander fixed">
+		  <i class="fa fa-bars fa-lg white"></i>
+		  </a>
+		</div>
+	</div>
+	<!-- MENU END -->
+	
+	<div class="col-md-3"></div>
+	<div class="wrapper col-md-6 col-xs-12">
+		<!-- SWIPE SLIDER -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<span class="slide">
+							<h1>Diamond App</h1>
+							<a href="#">Swipe to see more</a>
+						</span>
+					</div>
+					<div class="swiper-slide">
+						<span class="slide">
+							<h1>Find Jobs!</h1>
+							<a href="jobs.html">See more jobs</a>
+						</span>
+					</div>
+					<div class="swiper-slide">
+						<span class="slide">
+							<h1>Find Companies!</h1>
+							<a href="companies.html">See more companies</a>
+						</span>
+					</div>
+					<div class="swiper-slide">
+						<span class="slide">
+							<h1>Find Resumes!</h1>
+							<a href="resumes.html">See more resumes</a>
+						</span>
+					</div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+			</div>
+		<!-- END OF SWIPE SLIDER -->
+		
+		<div class="footer col-xs-12">
+			<span class="footer-icon col-xs-4">
+				<a href="jobs.html">
+					<img src="img/icons/jobs.png" alt="" />
+					<p>Jobs</p>
+				</a>
+			</span>
+			<span class="footer-icon col-xs-4">
+				<a href="resumes.html">
+					<img src="img/icons/resume.png" alt="" />
+					<p>Resumes</p>
+				</a>
+			</span>
+			<span class="footer-icon col-xs-4">
+				<a href="companies.html">
+					<img src="img/icons/company.png" alt="" />
+					<p>Companies</p>
+				</a>
+			</span>
+		</div>
+	</div>
+	<div class="col-md-3"></div>
+	<!-- Script -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/panel.js"> </script>
+	
+	<!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+	
+	<!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 30,
+    });
+    </script>
+	
+</body>
+</html>
