@@ -1,0 +1,54 @@
+/** Animations Styles **/
+
+
+/** Animation Names  :
+----------------------------------------------------*/
+.boat-animate{
+	-webkit-animation: boat 3s infinite;
+}
+
+.boat-animate::before{
+	-webkit-animation: steam 4s 1.5s infinite;
+}
+body{
+	-webkit-animation: bg-move 8s ease-out forwards;
+	/*-webkit-animation-direction: revert;*/
+	/*-webkit-animation-direction: alternate;*/
+	/*-webkit-animation-fill-mode : backwards;*/
+	/*-webkit-animation-fill-mode : forwards;*/
+	/*-webkit-animation-fill-mode : both;*/
+}
+
+.mike{
+	-webkit-animation : mike-move 6s 6s ease-out forwards,
+						mike-float 3.2s infinite ;
+}
+
+
+/** Keyframes :
+-----------------------------------------------------*/
+
+@-webkit-keyframes boat{
+	/*0%    { -webkit-transform : rotate(0deg) translateY(0); }*/
+	50%   { -webkit-transform:  rotate(-5deg) translateY(-10px);}
+	/*100%  { -webkit-transform : rotate(0) translateY(0); }*/
+}
+@-webkit-keyframes steam {
+	0%   { -webkit-transform: rotateZ(0deg) translateZ(0px);}
+	50%,
+	70% { opacity:1; }
+	100% { -webkit-transform: rotateZ(10deg) translate(-15px); }
+}
+
+@-webkit-keyframes bg-move{
+	0%   { background-position: 100% -650px; }
+	100% { background-position: -360% -500px; }
+}
+
+@-webkit-keyframes mike-move{
+	100% { left:15%;}
+}
+
+@-webkit-keyframes mike-float{
+	50% { -webkit-transform: rotateZ(5deg) translateY(-5px);}
+}

@@ -1,0 +1,59 @@
+/** Base styles **/
+
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background: url('../img/island.png') rgba(198, 243, 255, 0.29);
+    height: 100vh;
+    background-repeat: repeat-x;
+    background-position: 100% -500px;
+    /* background-position-x: 100%; */
+}
+
+.boat-animate{
+	position: absolute;
+    width: 400px;
+    left: 37%;
+    top: 50%;
+}
+.boat-animate img{
+	width: 100%;
+ }
+
+.boat-animate::before{
+	content: " ";
+    position: absolute;
+    display: block;
+    background: url('../img/steam.png') no-repeat center;
+    background-size: 70%;
+    width: 50%;
+    height: 50%;
+    left: -8%;
+    top: -35%;
+    opacity: 0;
+}
+
+.mike {
+    max-width: 200px;
+    position: absolute;
+    top: 70%;
+    left: -15%;
+    -webkit-transform: rotateZ(-5deg);
+}
+.mike img{
+	width:100%;
+}
+
+@media screen and (max-width: 480px){
+	.boat-animate {
+    position: absolute;
+    width: 225px;
+    left: 21%;
+    top: 65%;}
+    .mike{
+    	display:none;
+    }
+}
