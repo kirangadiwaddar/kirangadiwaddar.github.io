@@ -1,0 +1,46 @@
+/** Custom Css
+------------------------------------------*/
+
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	padding:10px;
+background: rgba(255, 152, 0, 0.42);
+}
+img{
+	height:35em;
+}
+.wrapper{
+	margin: 0 auto;
+    width: 600px;
+}
+
+ul.animate-deer{
+	list-style:none;
+}
+ul.animate-deer li{
+	display:inline-block;
+}
+
+ul.animate-deer:hover{
+	transition:0.5s ease;
+}
+
+.animate-button{text-align:center;}
+.animate-button input{
+	
+	background: #8BC34A;
+    border: none;
+    /* border-radius: 50%; */
+    /* width: 30%; */
+    /* height: 100px; */
+    padding: 15px 30px;
+    color: #232323;
+    text-transform: uppercase;
+    font-family: montserrat;
+    letter-spacing: 2px;
+
+}
