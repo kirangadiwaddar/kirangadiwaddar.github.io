@@ -40,12 +40,18 @@
 			<li class="line-28"><img src="img/28.png"></li>
 		</ul>
 
-		<div class="animate-button"> <input type="button" value="Animate It Again" onClick="window.location.reload()"></div>
+		<div class="animate-button"> <input type="button" id="animate-btn" value="Animate It Again"></div>
 	</div>
+	
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<script>
 		$(document).ready(function(){
     			$("body").show();
+		});
+	</script>
+	<script>
+		$( ".animate-btn" ).click(function() {
+		    location.reload();
 		});
 	</script>
 </body>
