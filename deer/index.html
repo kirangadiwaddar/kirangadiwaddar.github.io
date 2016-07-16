@@ -45,14 +45,10 @@
 	
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<script>
-		$(document).ready(function(){
-    			$("body").show();
-		});
-	</script>
-	<script>
-		$( "#animate-btn" ).click(function() {
-		    $("body").show();
-		});
+	$(window).load(function() {
+	  // When the page has loaded
+	  $("body").fadeIn(2000);
+	});
 	</script>
 </body>
 </html>
