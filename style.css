@@ -5,3 +5,11 @@
 margin:0;
 padding:0;
 }
+
+.wrapper{
+  width:368px;
+  margin:0 aut;
+}
+h1{
+  color:red;
+}
