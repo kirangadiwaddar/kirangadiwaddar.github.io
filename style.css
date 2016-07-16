@@ -6,10 +6,10 @@ margin:0;
 padding:0;
 }
 
-.wrapper{
-  width:368px;
-  margin:0 aut;
-}
-h1{
-  color:red;
+.wrapper {
+    width: 968px;
+    margin: 0 auto;
+    text-align: center;
+    padding:50px;
+    font-family:montserrat;
 }
