@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/custom.css">
 	<link rel="stylesheet" href="css/animate.css">	
 </head>
-<body>
+<body style="display:none;">
 	<div class="wrapper">
 		<ul class="animate-deer">
 			<li class="line-1"><img src="img/1.png"></li>
@@ -42,5 +42,11 @@
 
 		<div class="animate-button"> <input type="button" value="Animate It Again" onClick="window.location.reload()"></div>
 	</div>
+	
+	<script>
+		$(document).ready(function(){
+    			$("body").show();
+		});
+	</script>
 </body>
 </html>
