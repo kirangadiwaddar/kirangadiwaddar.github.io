@@ -28,4 +28,11 @@ h3 {
 ul {
     padding: 50px;
     text-align: left;
+    color: #FF5722;
+}
+
+a {
+    text-decoration: none;
+    color: #009688;
+    padding: 10px;
 }
