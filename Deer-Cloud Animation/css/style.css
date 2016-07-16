@@ -1,0 +1,92 @@
+/**
+
+Main Styles
+--------------------------------*/
+body{
+	background: rgba(255, 235, 59, 0.77);
+}
+
+body img{
+	max-width:100%;
+}
+
+.cloud-1{
+	width:15%;
+	float:left;
+	opacity:0.5;
+}
+.cloud-2{
+	width:20%;
+	float:right;
+	opacity:0.6;
+}
+
+.deer-img{
+	width:100%;
+	clear:both;
+	text-align:center;
+}
+.deer-img img{
+	width: 15%;
+    margin-top: 50px;
+}
+.deer-img:before{
+	    content: "";
+    display: block;
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: rgba(255, 0, 0, 0.28);
+    left: 36%;
+    border-radius: 50%;
+    top: 40%;
+}
+
+button.button-day {
+    width: 100px;
+    border: none;
+    border-radius: 30px 30px;
+    height: 40px;
+    /* color: #fff; */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    background: #FFC107;
+    outline:none;
+    cursor:pointer;
+}
+
+button.button-night {
+    width: 100px;
+    border: none;
+    border-radius: 30px 30px;
+    height: 40px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* color: #000; */
+    background: #31302c;
+    outline:none;
+    cursor:pointer;
+}
+
+.night-view{
+	background:#607D8B;
+	transition:0.5s ease;
+	-webkit-transition:0.5s ease;
+}
+.night-view .cloud-1, .cloud-2{
+	opacity:1;
+}
+
+.night-view .deer-img:before{
+	background:rgba(0, 0, 0, 0.28);
+}
+
+.day-view{
+	transition:0.5s ease;
+	-webkit-transition:0.5s ease;
+}
+.day-view .cloud-1, .cloud-2{
+	opacity:1;
+}

@@ -1,0 +1,36 @@
+/**
+
+Animation Styles 
+-----------------------------------------*/
+
+.cloud-1 img{
+	-webkit-animation: cloud1 35s infinite;
+}
+
+.cloud-2 img{
+	-webkit-animation: cloud2 35s infinite;
+}
+
+.deer-img img{
+	-webkit-animation : deer 7s infinite;
+}
+/* Animations
+--------------------------------------*/
+
+@-webkit-keyframes cloud1{
+	0% { -webkit-transform:translateX(0px); }
+	50% {-webkit-transform:translateX(600%); }
+	100% { -webkit-transform:translateX(0px);}
+}
+
+@-webkit-keyframes cloud2{
+	0% {-webkit-transform:translateX(0px);}
+	50%{-webkit-transform:translateX(-450%);}
+	100%{-webkit-transform:translateX(0%);}
+}
+
+@-webkit-keyframes deer{
+	0% {-webkit-transform:scale(0.8);}
+	50% {-webkit-transform:scale(1);}
+	100% {-webkit-transform:scale(0.8);}
+}
