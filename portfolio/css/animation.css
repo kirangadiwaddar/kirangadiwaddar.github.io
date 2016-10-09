@@ -1,0 +1,45 @@
+/** Css animation
+--------------------------------**/
+
+.vertical-scroll{
+	-webkit-animatin : scroll 2s infinite;
+	-moz-animatin : scroll 2s infinite;
+	animation: scroll 2s infinite;
+}
+
+/*.layer{
+	animation: move 8s infinite;
+	-webkit-animation: move 8s infinite;
+	-moz-animation: move 8s infinite;
+
+}*/
+
+
+
+
+
+
+/** @keyframes
+--------------------------------**/
+
+@-webkit-keyframes scroll{
+	0%{}
+	50%{margin-top:-10px;}
+	100%{}	
+}
+/*@-moz-keyframes scroll{
+	0%{}
+	50%{margin-top:-10px;}
+	100%{}	
+}*/
+@keyframes scroll{
+	0%{}
+	50%{margin-top:-10px;}
+	100%{}	
+}
+
+@-webkit-keyframes move{
+	0%{}
+	50%{-webkit-transform:scale(1.1);}
+	100%{}	
+}
