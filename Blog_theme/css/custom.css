@@ -1,0 +1,268 @@
+/** Theme Main Styles
+--------------------------------------------------**/
+
+*{
+	margin:0;
+	padding:0;
+}
+
+@font-face{
+	font-family:'logo_font';
+	src:url(../fonts/Pacifico-Regular.ttf);
+}
+
+@font-face{
+	font-family:'title_font';
+	src:url(../fonts/Nunito-Regular.ttf);
+}
+
+@font-face{
+	font-family:'content_font';
+	src:url(../fonts/Pacifico-Regular.ttf);
+}
+body{
+	overflow-x: hidden;
+}
+
+/** Header list-style-position: --------**/
+
+header{
+	border:1px solid gainsboro;
+}
+.logo{
+	float:left;
+}
+.menu{
+	float:right;
+	padding:15px 0px;
+}
+.logo h2{
+	font-size: 18px;
+    letter-spacing: 3px;
+    /*text-transform: uppercase;*/
+    font-family: 'logo_font';
+    color: #607D8B;
+}
+
+span.menu-line{
+	width: 25px;
+    height: 1px;
+    background: #607D8B;
+    display: block;
+    margin-bottom: 3px;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+}
+#line-1{
+	width:40px;
+}
+#line-2{
+	width:32px;
+}
+#line-3{
+	width:15px;
+}
+
+.menu:hover{
+	cursor: pointer;
+}
+.menu:hover #line-1{
+	width:35px;
+	transition:1s ease;
+	-webkit-transition:1s ease;
+}
+.menu:hover #line-2{
+	width:30px;
+	transition:1s ease;
+	-webkit-transition:1s ease;
+}
+
+.menu:hover .menu-open{
+	-webkit-transform:translatex(0px);
+	transform:translatex(0px);
+	-webkit-transition:0.5s ease;
+	transition:0.5s ease;
+	z-index: :9999;
+}
+.menu:not(hover) .menu-open{
+	transition:0.5s ease-in-out;
+	-webkit-transition:0.5s ease-in-out;
+	z-index: 9999;
+}
+.menu:hover .menu-click{
+	-webkit-transform:translate(-300px);
+	transform:translate(-300px);
+	transition:0.4s ease-in-out;
+	-webkit-transition:0.4s ease-in-out;
+}
+.menu:not(hover) .menu-click{
+	transition:0.4s ease-in-out;
+	-webkit-transition:0.4s ease-in-out;
+}
+.menu-open{
+	position: absolute;
+    background: #607D8B;
+    padding: 10px;
+    width: 300px;
+    right: 0;
+    top: 0;
+    height: 100%;
+    transform:translateX(300px);
+    -webkit-transform:translate(300px);
+}
+.menu-open ul{
+	list-style:none;
+	margin-top:40px;
+	text-align:center;
+}
+.menu-open ul li{
+	padding:10px;
+	border-bottom:1px solid #769bad;
+	line-height: 3;
+}
+.menu-open ul li a{
+	color:#fff;
+	letter-spacing:2px;
+	font-size:15px;
+	font-family: logo_font;
+	letter-spacing: 3px;
+}
+.menu-open ul li:hover a{
+	letter-spacing:10px;
+	text-decoration: none;
+	transition:0.2s ease-in-out;
+	-webkit-transition:0.2s ease-in-out;
+}
+
+.home-title{
+	font-size: 27px;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    font-family: title_font;
+}
+
+span.divider{
+	height: 2px;
+    width: 100px;
+    background: #607D8B;
+    display: block;
+    margin: 20px 0px;
+}
+
+.wrapper p{
+	color: gray;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+.article{
+	border-bottom: 1px solid rgb(239, 239, 239);
+}
+.read-more-btn{text-align:right;}
+
+button{
+	background: #607D8B;
+    border: none;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 2px;
+    text-align: right;
+    letter-spacing: 2px;
+    margin: 15px 0;
+}
+
+h3.sidebar-title{
+	margin-top: 40px;
+    font-family: title_font;
+    letter-spacing: 1px;
+}
+
+.search-box input{
+	width: 100%;
+    border: 1px solid gainsboro;
+    height: 40px;
+    border-radius: 2px;
+    padding: 10px;
+}
+span.title-divider{
+	display:block;
+	height:2px;
+	width:50px;
+	background:gray;
+	margin:20px 0px;
+}
+
+.sidebar{
+	padding-left:35px;
+}
+
+.blog-content{
+	border-right:1px solid gainsboro;
+	margin-bottom:20px;
+}
+.no-padding{
+	padding:0px !important;
+}
+
+.gallery-content img {
+    max-width: 95%;
+    margin-bottom: 10px;
+    border: 1px solid gainsboro;
+    padding: 3px;
+}
+
+footer {
+    padding: 15px;
+    background: rgba(220, 220, 220, 0.51);
+    text-align: center;
+}
+footer h3{
+	font-family: logo_font;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.input-container{
+	padding:30px;
+}
+.input-container input{
+	padding: 5px 30px;
+    border: none;
+    border-radius: 30px;
+}
+.input-container input[type="submit"]{
+	background: #607D8B;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.inner{
+	border: 2px solid #607D8B;
+    padding: 11px 5px;
+    border-radius: 30px;
+}
+
+.about{
+	color: #fff;
+    letter-spacing: 1px;
+    margin-top: 60px;
+    padding: 10px;
+    text-align: justify;
+    font-size: 13px;
+}
+
+.subscribe {
+    padding: 10px;
+}
+.subscribe input{
+	width: 100%;
+    padding: 7px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.subscribe input[type="submit"]{
+	color: #fff;
+    font-family: title_font;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 14px;
+    background: #32444c;
+}
