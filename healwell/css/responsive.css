@@ -1,0 +1,72 @@
+@media screen and (max-width: 768px){
+    body{
+        font-size: 13px;
+    }
+    .pd-20{
+        padding: 10px;
+    }
+    .navbar-default .navbar-toggle{
+        border-color: transparent;
+        border:none;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #4355a5 !important;
+    }
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+        background-color: transparent;
+    }
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        border-color: #dcf0fe;
+    }
+    .navbar-default .navbar-nav>li>a{
+        line-height: 30px;
+    }
+    .nav>li{
+        display: inline-block;
+    }
+    .d-flex{
+        flex-direction: column;
+    }
+    .centered-block{
+        flex-direction: column;
+    }
+    .col-reverse{
+        flex-direction: column-reverse;
+    }
+    .banner-text p{
+        font-size: 18px;
+    }
+    .banner-text h1{
+        font-size: 22px;
+    }
+    .banner-text{
+        margin-bottom: 20px;
+    }
+    .banner{
+        padding: 30px 0 0;
+    }
+    .title{
+        font-size: 20px;
+        text-align: center;
+    }
+    .sb-block{
+        padding: 10px;
+    }
+    .sb-block h4{
+        font-size: 14px;
+    }
+    .d-flex-link{
+        justify-content: center;
+    }
+    .reg-block{
+        width: 100%;
+    }
+    .reg-block input[type="text"]{
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+    .reg-block input[type="submit"]{
+        width: 80px;
+        font-size: 13px;
+    }
+}
